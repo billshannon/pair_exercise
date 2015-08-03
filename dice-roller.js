@@ -32,4 +32,18 @@ var diceRollerFour = function (numberOfDice, upperBound) {
     }
     return dice
 }
-console.log(diceRollerFour(4, 15));
+
+
+var diceRollerFour = function (numberOfDice, upperBound) {
+    var dice = [];
+    if (upperBound === undefined) {
+        upperBound = 6;
+    }
+    for (var i = 0; i < numberOfDice; i++) {
+        dice.push(Math.floor(Math.random() * upperBound + 1));
+    }
+    ;
+    return dice
+};
+
+console.log(diceRollerFour(4));
